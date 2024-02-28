@@ -51,6 +51,7 @@
                     </ul>
                 </li>
             </ul>
+
         </nav>
     </header>
 
@@ -127,6 +128,10 @@
             $('.botao-menu button').click(function() {
                 $('.menu').slideToggle();
             })
+
+            $(window).resize(function() {
+                $(".menu").removeAttr("style");
+            });
         });
     </script>
 </body>
